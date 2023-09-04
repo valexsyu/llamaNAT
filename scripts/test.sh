@@ -31,3 +31,6 @@ model_input = tokenizer(eval_prompt, return_tensors="pt").to("cuda")
 model.eval()
 with torch.no_grad():
     print(tokenizer.decode(model.generate(**model_input, max_new_tokens=100)[0], skip_special_tokens=True))
+
+
+##test
